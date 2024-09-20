@@ -207,7 +207,6 @@ with open(urlsToCategorize) as file:
         # if apiCallNumber == 2:  # for debugging and testing.
         #    break
 print("### Script is complete Examine Output AND REJOICE! ###")
-print("### Buy Disher a glass of wine or a bourbon when you see him. ###")
 # Loggingout
 logoff = s.delete("https://zsapi.{0}.net/api/v1/authenticatedSession".format(cloudName))
 if logoff.status_code == 200:
@@ -217,7 +216,6 @@ else:
 logtimeEnd = datetime.datetime.now()
 LogToConsoleAndFile("# Script Ended: {}\n".format(logtimeEnd.strftime("%Y-%m-%d %H:%M:%S")))
 LogToConsoleAndFile("Script runtime approx: %f seconds" % (time.time() - start_time))
-LogToConsoleAndFile("When you see Disher, buy him a drink because he just saved you a boat load of time.")
 # Restore Stdout and close the logfile
 sys.stdout = orig_stdout
 logFile.close()
