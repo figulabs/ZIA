@@ -41,8 +41,8 @@ from itertools import islice
 import requests
 import socket
 ### Local Variables ###
-outputFilename = './Sanitas/output.csv'  # This the logFile/csv name in relation to the script, i'm not making the output directory make sure it exists.
-urlsToCategorize = './Sanitas/lista-urls-INPUT.txt'  # This is the file we're processing, one url per line, no quotes or commas adjust path as necessary
+outputFilename = './yourdir/output.csv'  # This the logFile/csv name in relation to the script, i'm not making the output directory make sure it exists.
+urlsToCategorize = './yourdir/lista-urls-INPUT.txt'  # This is the file we're processing, one url per line, no quotes or commas adjust path as necessary
 categoryDisplayName = "Zscaler Categories"  # This is just a description that will be logged to the file.
 # More Variables for Time/Header type
 now = int(time.time())
@@ -53,10 +53,10 @@ start_time = time.time()
 # Local Auth Variables
 # I am not advocating you save your credentials here in the clear, but that's how this works.
 #
-username = 'api_test@sanitas.es'  # Admin username with API privileges
-password = 'Zscaler123!'    # password for the above account
-apikey = '8h4E9wxYy90z'      # instance API key
-seed = '8h4E9wxYy90z'        # also the API Key?
+username = 'yourusername@yourdomain.com'  # Admin username with API privileges
+password = 'yourpassword'    # password for the above account
+apikey = 'yourapikey'      # instance API key
+seed = 'yourapikey'        # also the API Key
 cloudName = "zscaler"     # this is the customer's cloud zscaler, zscloud, zscalertwo, zscalerthree, zscalerbeta
 ### Our Functions ###
 # obsfucate API key function
